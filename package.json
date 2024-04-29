@@ -1,5 +1,6 @@
 {
-  "name": "lab-react-jsx-boilerplate",
+  "homepage": "https://Deepakshi725.github.io/boilerplate-react/",
+  "name": "boilerplate-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,9 +13,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base ./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.4",
+    "gh-pages": "^6.1.1",
     "vite": "^4.4.9"
   }
 }
